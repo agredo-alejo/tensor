@@ -7,8 +7,7 @@ export const stack = (listOfTensors: Tensor[]) => {
     for (let index = 0; index < listOfTensors.length; index++) {
         for (let j = 0; j < listOfTensors[index].rank; j++) {
             if (listOfTensors[index].shape[j] !== shape[j]) {
-                console.error('Tensors must have the same shape')
-                return
+                throw new Error('Tensors must have the same shape')
             }
         }
         result[index] = listOfTensors[index].data

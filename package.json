@@ -1,6 +1,6 @@
 {
   "name": "@apjs/tensor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A library with a set of functions to facilitate the use of the basic operations of linear algebra",
   "type": "module",
   "main": "build/index.js",

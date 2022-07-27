@@ -1,5 +1,5 @@
 import { Tensor, TensorLike, TensorLike2D } from "../class"
-import { tensor, zerosLike } from "../creation"
+import { zerosLike } from "../creation"
 import { max, mean, min, sumExp } from "../reduction"
 import { forEachReturn } from "../traverse"
 import { ensureTensor, _constrain, _remap } from "../utils"
