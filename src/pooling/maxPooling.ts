@@ -10,7 +10,7 @@ export const maxPooling2D = (
     _padding: number[] | boolean,
     poolSize = [2, 2],
     stride = poolSize,
-    coords: number[][]
+    coords?: TensorLike2D
 ) => {
     coords = []
     let internInput = ensureTensor(input)
@@ -51,7 +51,7 @@ export const maxPooling3D = (
     _padding: number[] | boolean,
     poolSize = [2, 2],
     stride = poolSize,
-    coords: number[][] = []
+    coords: TensorLike2D = []
 ) => {
     coords = []
     // input tensor3d
