@@ -267,7 +267,9 @@ export class Tensor {
     }
 
     reshape(shape: number[]) {
-        return reshape(this, shape)
+        return this.set(
+            reshape(this, shape)
+        )
     }
 
     vectorToTensor(shape: number[]) {
